@@ -181,8 +181,15 @@ function setup()
 	canvas.position(0,0);
 	
 	button = createButton('RUN');
-	button.position(10, 200);
+	button.position(10, 90);
 	button.mouseClicked(run);
+
+	explanation = createP(" Click inside the frame to create nodes.. Then Hit RUN!")
+	explanation.style('color', 'white');
+	explanation.style('align', 'centre');
+	explanation.style('font-family', 'monospace');
+	explanation.style('font-size', '19px');
+	explanation.position(windowWidth/3,2)
 
 	bestTour = [];
 	bestDistance = 0;
